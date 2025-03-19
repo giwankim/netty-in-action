@@ -5,6 +5,12 @@ plugins {
   id("com.diffplug.spotless")
 }
 
+java {
+  toolchain {
+    languageVersion.set(JavaLanguageVersion.of(21))
+  }
+}
+
 repositories {
   mavenCentral()
 }
